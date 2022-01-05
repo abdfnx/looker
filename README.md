@@ -2,6 +2,10 @@
 
 > 🔍 find app path and print it.
 
+<p align="center">
+  <img src="./preview.gif" height="120px" />
+</p>
+
 **A alternative package to `exec.LookPath()`.**
 
 ## The problem
