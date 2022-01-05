@@ -29,7 +29,7 @@ import (
 )
 
 func gitAdd() error {
-    gitPath, err := looker.LookPath("go")
+    gitPath, err := looker.LookPath("git")
 
     if err != nil {
         return err
