@@ -1,6 +1,6 @@
 // +build !windows
 
-package tcexe
+package looker
 
 import "os/exec"
 

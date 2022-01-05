@@ -1,4 +1,4 @@
-package tcexe
+package looker
 
 import (
 	"os"
@@ -51,15 +51,19 @@ func findExecutable(file string, exts []string) (string, error) {
 
 func LookPath(file string) (string, error) {
 	var exts []string
+
 	x := os.Getenv(`PATHEXT`)
+
 	if x != "" {
 		for _, e := range strings.Split(strings.ToLower(x), `;`) {
 			if e == "" {
 				continue
 			}
+
 			if e[0] != '.' {
 				e = "." + e
 			}
+
 			exts = append(exts, e)
 		}
 	} else {
@@ -75,6 +79,7 @@ func LookPath(file string) (string, error) {
 	}
 
 	path := os.Getenv("path")
+
 	for _, dir := range filepath.SplitList(path) {
 		if f, err := findExecutable(filepath.Join(dir, file), exts); err == nil {
 			return f, nil

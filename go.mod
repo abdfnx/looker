@@ -1,3 +1,3 @@
-module github.com/Timothee-Cardoso/tc-exe
+module github.com/abdfnx/looker
 
-go 1.15
+go 1.17
