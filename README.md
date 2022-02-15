@@ -23,6 +23,12 @@ func gitAdd() error {
 
 Searching the current directory (surprising behavior) before searching folders listed in the PATH environment variable (expected behavior) seems to be intended in Go and unlikely to be changed [**go#38736**](https://github.com/golang/go/issues/38736)
 
+## Install
+
+```bash
+go get -v github.com/abdfnx/looker@v0.1.0
+```
+
 ## Example:
 
 ```go
